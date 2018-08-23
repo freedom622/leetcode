@@ -41,7 +41,7 @@ For Sum Issue,
 **********************************************
 
 
-2, Math problem
+2, LinkedList Problem
 **********************************************
 
 ```
@@ -50,8 +50,9 @@ For Sum Issue,
 
 ## Summary
 
-For Math Issue, 
-* 
+For LinkedList problem, 
+* using the dummy head can save a checking in the while loop, making the code clean
+* do not forget the carry (bring over the carry)
 
 **********************************************
 
