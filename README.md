@@ -63,7 +63,10 @@ For LinkedList problem,
 **********************************************
 
 ```
-2.1 (2) Add Two Numbers
+3.1 (2) Add Two Numbers
+```
+```
+3.1 (43) Multiply Strings
 ```
 
 ## Summary
