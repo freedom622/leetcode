@@ -71,11 +71,15 @@ For LinkedList problem,
 ```
 3.3 (67) Add Binary
 ```
+```
+3.4 (415) Add Strings
+```
 
 ## Summary
 
 For Math problem, 
 * use integer array to save the number for each bit
+* add from end to the front, skip the front zero value 
 * do not forget the carry (bring over the carry)
 
 **********************************************
