@@ -53,7 +53,7 @@ For Sum Issue,
 ## Summary
 
 For LinkedList problem, 
-* using the dummy head can save a checking in the while loop, making the code clean
+* using the dummy head you do not need to check if current node is the first node or not, making the code clean
 * do not forget the carry (bring over the carry)
 
 **********************************************
