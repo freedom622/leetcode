@@ -68,6 +68,9 @@ For LinkedList problem,
 ```
 3.2 (43) Multiply Strings
 ```
+```
+3.3 (67) Add Binary
+```
 
 ## Summary
 
