@@ -75,6 +75,7 @@ For LinkedList problem,
 ## Summary
 
 For Math problem, 
+* use integer array to save the number for each bit
 * do not forget the carry (bring over the carry)
 
 **********************************************
