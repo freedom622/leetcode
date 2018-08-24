@@ -54,6 +54,21 @@ For Sum Issue,
 
 For LinkedList problem, 
 * using the dummy head you do not need to check if current node is the first node or not, making the code clean
+
+
+**********************************************
+
+
+3, Math Problem
+**********************************************
+
+```
+2.1 (2) Add Two Numbers
+```
+
+## Summary
+
+For Math problem, 
 * do not forget the carry (bring over the carry)
 
 **********************************************
