@@ -1,7 +1,7 @@
 # Leetcode
 Leetcode questions summary Category
 
-** 1, Sum problem **
+**1, Sum problem**
 **********************************************
 
 ```
