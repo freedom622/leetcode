@@ -41,7 +41,7 @@ For Sum Issue,
 **********************************************
 
 
-2, LinkedList Problem
+**2, LinkedList Problem**
 **********************************************
 
 ```
@@ -59,7 +59,7 @@ For LinkedList problem,
 **********************************************
 
 
-3, Math Problem
+**3, Math Problem**
 **********************************************
 
 ```
@@ -87,7 +87,7 @@ For Math problem,
 **********************************************
 
 
-4, Bit Manipulation Problem
+**4, Bit Manipulation Problem**
 **********************************************
 
 ```
@@ -101,7 +101,7 @@ For Bit Manipulation problem,
 
 **********************************************
 
-5, String Problem
+**5, String Problem**
 **********************************************
 
 5.1 Slide Window Skill
