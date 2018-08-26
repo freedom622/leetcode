@@ -112,7 +112,9 @@ For Bit Manipulation problem,
 
 ## Summary
 
-For String problem
+For String problem, 
+(1) Slide window skill summary
+* 
 
 **********************************************
 
