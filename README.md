@@ -109,7 +109,15 @@ For Bit Manipulation problem,
 ```
 5.1.1 (3) Longest Substring Without Repeating Characters
 ```
-
+```
+5.1.2 (76) Minimum Window Substring
+```
+```
+5.1.3 (209) Minimum Size Subarray Sum
+```
+```
+5.1.4 (438) Find All Anagrams in a String
+```
 ## Summary
 
 For String problem, 
