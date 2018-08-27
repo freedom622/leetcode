@@ -122,7 +122,8 @@ For Bit Manipulation problem,
 
 For String problem, 
 (1) Slide window skill summary
-* 
+* this skill only apply to continuous problem (substring or subarray)
+* it can greatly improve time complexity
 
 **********************************************
 
