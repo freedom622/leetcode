@@ -148,6 +148,6 @@ For Design Problem,
 (2) How to combine the benefit of two data structures ? for example, fast search using hashmap and remove the last element in access order using doubly linkedlist. The value can be a doubly linkedlist node for hashmap. 
 
 LinkedHashMap summary
-1, it also uses doubly linkedlist and hashmap internally. 
-2, The paramter "accessOrder" for constructor is importnat, when implementating LRU, it should be true. (True is access-order, False is insertion-order)
+*1, it also uses doubly linkedlist and hashmap internally. 
+*2, The paramter "accessOrder" for constructor is importnat, when implementating LRU, it should be true. (True is access-order, False is insertion-order)
 **********************************************
