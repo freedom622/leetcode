@@ -160,6 +160,9 @@ LinkedHashMap summary
 ```
 7.1 (11) Container With Most Water
 ```
+```
+7.2 (42) Trapping Rain Water
+```
 
 ## Summary
 
