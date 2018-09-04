@@ -167,3 +167,5 @@ LinkedHashMap summary
 ## Summary
 
 For Two pointer Skill,
+
+* 1, using stack, you can calculate the dent. 
