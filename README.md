@@ -169,3 +169,4 @@ LinkedHashMap summary
 For Two pointer Skill,
 
 * 1, using stack, you can calculate the dent. 
+* 2, how to find the dent and check the water using two pointers method ? 
