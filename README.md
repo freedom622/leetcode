@@ -77,6 +77,12 @@ For LinkedList problem,
 ```
 3.5 (445) Add Two Numbers II
 ```
+```
+3.6 (9) Palindrome Number
+```
+```
+3.7 (9) Reverse Integer
+```
 ## Summary
 
 For Math problem, 
