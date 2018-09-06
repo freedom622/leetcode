@@ -216,7 +216,7 @@ For Stack Skill,
 ## Summary
 
 For DP Skill,
-*How to understadnd Overlapping subproblem and optimal substructure ?
-*Overlapping subproblem: 也就是说一个问题可以分解成规模较小的类似的子问题。（当做一颗树，发现子树中有很多重复的时候，说明是重叠子问题）
-*Optimal substructure: 每个阶段的最优状态可以从之前某个阶段的某个或某些状态直接得到而不管之前这个状态是如何得到的。 (比如：自下而上的方式中，当前状态可由之前某些状态直接运算得到) 这个其实就是找递推公式的过程，如果能找到递推公式，并且当前的结果要依赖之前的结果，那么就满足这个特性。
+* How to understadnd Overlapping subproblem and optimal substructure ?
+* Overlapping subproblem: 也就是说一个问题可以分解成规模较小的类似的子问题。（当做一颗树，发现子树中有很多重复的时候，说明是重叠子问题）
+* Optimal substructure: 每个阶段的最优状态可以从之前某个阶段的某个或某些状态直接得到而不管之前这个状态是如何得到的。 (比如：自下而上的方式中，当前状态可由之前某些状态直接运算得到) 这个其实就是找递推公式的过程，如果能找到递推公式，并且当前的结果要依赖之前的结果，那么就满足这个特性。
 
