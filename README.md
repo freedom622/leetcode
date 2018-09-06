@@ -170,3 +170,19 @@ For Two pointer Skill,
 
 * 1, using stack, you can calculate the dent. 
 * 2, how to find the dent and check the water using two pointers method ? 
+**********************************************
+
+**8, Stack problem**
+**********************************************
+
+```
+8.1 (20) Valid Parentheses
+```
+```
+8.2 
+```
+
+## Summary
+
+For Stack Skill,
+
