@@ -127,6 +127,13 @@ For Bit Manipulation problem,
 ```
 5.1.4 (438) Find All Anagrams in a String
 ```
+
+5.2 Palindromic Problem
+```
+5.2.1 (5) Longest Palindromic Substring
+```
+
+
 ## Summary
 
 For String problem, 
