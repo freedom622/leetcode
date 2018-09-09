@@ -232,6 +232,8 @@ For Example:
 3.为什么要自底而上的求解            
 自底而上的求解可以避免重复计算重叠的子问题
 
+总之，动态规划其实就是一种优化技术，这中技术适用于在有重复计算的场景中，缓存计算结果，当下次需要结果的时候直接取出结果而不是再次计算。（所以，一般只有在重叠子问题，并最优子结构的时候，才会适用这种优化，否则并不能得到太多时间复杂度的提升）
+
 
 https://aaronice.gitbooks.io/lintcode/content/dynamic_programming/maximum_product_subarray.html
 https://blog.csdn.net/column/details/24281.html
