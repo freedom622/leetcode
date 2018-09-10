@@ -211,7 +211,7 @@ For Stack Skill,
 8.1 (20) Valid Parentheses
 ```
 ```
-8.2 
+8.2 (5) Longest Palindromic Substring
 ```
 
 ## Summary
