@@ -1,5 +1,6 @@
 Current Problem 5
 
+From Sep9 to Dec 9, by type. 100 topics and Google. 
 
 # Leetcode
 Leetcode questions summary Category
