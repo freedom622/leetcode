@@ -234,6 +234,7 @@ For Example:
 
 总之，动态规划其实就是一种优化技术，这中技术适用于在有重复计算的场景中，缓存计算结果，当下次需要结果的时候直接取出结果而不是再次计算。（所以，一般只有在重叠子问题，并最优子结构的时候，才会适用这种优化，否则并不能得到太多时间复杂度的提升）
 
+对于二维动态规划（比如挖金问题），通过列出递归式，可以说是满足最优子结构，并能看出有重叠子问题。（二维不能通过画树，而要通过画表格才能体会是否有重叠字问题），对于重叠字问题，因为递归式是DP(i,j) = MAX(DP(i-1,j-3)+200, DP(i-1,j)), DP(i-1,j) and DP(i-1,j-3)很有可能被好几个下一行的计算重复的使用，所以一定要存储起来，这样可以有效减少计算，也就是动态规划的核心之一，memorization。 
 
 https://aaronice.gitbooks.io/lintcode/content/dynamic_programming/maximum_product_subarray.html
 https://blog.csdn.net/column/details/24281.html
