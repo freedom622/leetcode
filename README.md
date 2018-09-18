@@ -183,6 +183,9 @@ LinkedHashMap summary
 ```
 7.3 (253) Meeting Room 
 ```
+```
+7.4 (243) Shortest Word Distance
+```
 ## Summary
 
 For Two pointer Skill,
