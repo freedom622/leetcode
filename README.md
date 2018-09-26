@@ -279,6 +279,41 @@ https://blog.csdn.net/column/details/24281.html
 ```
 
 ## Summary
+The purpose of Topological sort is that
+1, in a directed graph
+2, for every directed edge UV from vertex U to vertex V, U comes before V in the ordering
+
+what is the features of Topological sort?
+Only DAG(directed acyclic graph) has at leat one topological ordering. So, if there is a cycle in a graph, so it does not have a topological ordering. By using this feature, we can check if there is a cycle in a directed graph. 
+
+Where it is applied ?
+This algorithm can be applied to those tasks which have dependencies for each other. For example, 
+(1) Build systems
+(2) Advanced-Packaging Tool (apt-get)
+(3) Task Scheduling
+(4) Pre-requisite problems
+
+Why it can be applied to dependent tasks?
+because only dependent tasks can be represented by directed graph. 
+
+Another question when discussing with Q is, how to check a graph is all-connected?
+For undirected graph, from any one point, do DFS or BFS, check if the number of points in the path sums to the number of vertex of the graph. 
+For directed graph, 
+
+From the implementation perspective, there are two methods:
+1, BFS (Kahn's algorithm)
+1.1 find those points which have the in degree value 0. 
+1.2 enqueue them in a queue, and dequeue one from the queue (amount to removing the edge from this point to directed and connected points).
+1.3 lessen one in-degree value and put the connected points to queue if the in-degreee becomes 0, return to 1.1. 
+1.4 using an array to keep the order when dequeuing an element. 
+
+2, DFS
+2.1 Start from any point, and mark the node as temporily visited
+2.2 Do DFS unitl no further node, mark it as visited, return to last node. 
+2.3 Do DFS from this point again, until all points are vistied. 
+If during DFS, visit a node which is temporily visited, then there is a loop, otherwise, put it in a stack. 
+
+
 
 **********************************************
 
