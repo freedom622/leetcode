@@ -271,7 +271,7 @@ https://blog.csdn.net/column/details/24281.html
 
 **********************************************
 
-**12, Topplogical Sort problem**
+**12, Topological Sort problem**
 **********************************************
 
 ```
