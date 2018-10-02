@@ -321,8 +321,70 @@ If during DFS, visit a node which is temporily visited, then there is a loop, ot
 **********************************************
 
 ```
-13.1 
+13.1 (307) Range Sum Query - Mutable
 ```
 ## Summary
 
+Implementation: 
+
+class SegmentTree{
+        
+        int[] tree; // use array to save tree
+        int n; // the number of elements in the array
+        
+        //init a segment tree (time complexity is: O(n))
+        public SegmentTree(int[] nums){
+            if(nums.length>0){
+                n = nums.length;
+                tree = new int[n*2];
+                buildTree(nums);
+            }
+        }
+        
+        private void buildTree(int[] nums){
+            for(int i=n,j=0;i<n*2;i++,j++){
+                tree[i] =nums[j]; 
+            }
+            for(int i=n-1;i>0;i--){
+                tree[i] = tree[i*2]+tree[i*2+1];
+            }
+        }
+        
+        //update a tree node, TC is O(logn)
+        public void update(int pos, int val){
+            int treePos = pos + n;
+            tree[treePos] = val;
+            while(treePos>0){
+                int left = treePos;
+                int right = treePos;
+                if(treePos%2==0){
+                    right = treePos+1;
+                } else {
+                    left = treePos-1;
+                }
+                tree[treePos/2] = tree[left]+tree[right];
+                treePos /=2;
+            }
+        }
+        
+        //get the sum TC:O(logn)
+        public int sumRange(int left, int right){
+            left += n;
+            right += n;
+            int sum = 0;
+            while(left<=right){
+                if(left%2==1){
+                    sum+=tree[left];
+                    left++;
+                }
+                if(right%2==0){
+                    sum+=tree[right];
+                    right--;
+                }
+                left/=2;
+                right/=2;
+            }
+            return sum;
+        }
+        
 **********************************************
