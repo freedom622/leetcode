@@ -391,3 +391,20 @@ class SegmentTree{
         }
         
 **********************************************
+
+**********************************************
+
+**12, HashMap, LinkedHashMap, TreeMap Problem**
+**********************************************
+
+```
+12.1 (716) Max Stack
+```
+
+## Summary
+Time Complexity: 
+               insertion	deletion	search	
+HashMap	          O(1)	      O(1)	     O(1)	
+LinkedHashMap	  O(1)	      O(1)	     O(1)	
+TreeMap	         O(logn)	 O(logn)	O(logn)
+
