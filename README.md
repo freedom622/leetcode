@@ -403,11 +403,15 @@ class SegmentTree{
 
 ## Summary
 Time Complexity: 
+
 | First Header  | Second Header |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 
+
+| Command | Description |
+| --- | --- |
 
                insertion	deletion	search	
 HashMap	          O(1)	      O(1)	     O(1)	
