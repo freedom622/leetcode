@@ -59,7 +59,113 @@ For Sum Issue,
 For LinkedList problem, 
 * using the dummy head you do not need to check if current node is the first node or not, making the code clean
 
+Doubly LinkedList problem, 
+How to implement the doubly linkedlist ?
+Initial implementation: 
 
+class DoubleLinkedList {
+        Node head;
+        Node tail;
+
+        DoubleLinkedList() {
+            head = null;
+            tail = null;
+        }
+
+        // add a new node
+        public Node push(int it) {
+            if (head == null) {
+                head = new Node(it);
+                tail = head;
+            } else {
+                Node nn = new Node(it);
+                tail.next = nn;
+                nn.pre = tail;
+                // reset tail;
+                tail = nn;
+            }
+            return tail;
+        }
+
+        public int pop() {
+            int ret = tail.value;
+            Node pre = tail.pre;
+            if (pre != null) {
+                pre.next = null;
+            }
+            tail.pre = null;
+            tail = pre;
+            if (tail == null) {
+                head = null;
+            }
+            return ret;
+        }
+
+        public int top() {
+            return tail.value;
+        }
+
+        // delete a node
+        public void delete(Node node) {
+            Node pre = node.pre;
+            Node next = node.next;
+            if (pre != null) {
+                pre.next = node.next;
+            } else {
+                head = next;
+            }
+            if (next != null) {
+                next.pre = node.pre;
+            } else {
+                tail = pre;
+            }
+        }
+
+    }
+
+Since head or tail may be null, I need to check if head or tail equals to null a lot, which is not good. 
+Improved version: 
+
+class DoubleLinkedList {
+        Node head;
+        Node tail;
+
+        DoubleLinkedList() {
+            head = new Node(0);
+            tail = new Node(0);
+            head.next = tail;
+            tail.pre = head;
+        }
+
+        // add a new node
+        public Node push(int it) {
+            Node x = new Node(it);
+            x.pre = tail.pre;
+            x.next = tail;
+            tail.pre = x;
+            x.pre.next = x;
+            return x;
+        }
+
+        public int pop() {
+            return delete(tail.pre).value;
+        }
+
+        public int top() {
+            return tail.pre.value;
+        }
+
+        // delete a node
+        public Node delete(Node node) {
+            Node pre = node.pre;
+            Node next = node.next;
+            pre.next = next;
+            next.pre = pre;
+            return node;
+        }
+
+    }
+there is a dummy head and tail making the code concise and clear. 
 **********************************************
 
 
