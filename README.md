@@ -404,17 +404,10 @@ class SegmentTree{
 ## Summary
 Time Complexity: 
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+|               |   insertion   |   deletion    |     search    |
+| ------------- | ------------- | ------------- | ------------- |
+| HashMap       |      O(1)     |     O(1)      |      O(1)     |
+| LinkedHashMap |      O(1)     |     O(1)      |      O(1)     |
+| TreeMap       |    O(logn)    |    O(logn)    |     O(logn)   |
 
-
-| Command | Description |
-| --- | --- |
-
-               insertion	deletion	search	
-HashMap	          O(1)	      O(1)	     O(1)	
-LinkedHashMap	  O(1)	      O(1)	     O(1)	
-TreeMap	         O(logn)	 O(logn)	O(logn)
 
