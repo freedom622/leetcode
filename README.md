@@ -156,6 +156,9 @@ For String problem,
 ```
 6.3 (173) Binary Search Tree Iterator
 ```
+```
+6.4 (716) Max Stack
+```
 ## Summary
 
 For Design Problem,
@@ -166,7 +169,7 @@ For Design Problem,
 
 LinkedHashMap summary
 * 1, it also uses doubly linkedlist and hashmap internally. 
-* 2, The paramter "accessOrder" for constructor is importnat, when implementating LRU, it should be true. (True is access-order, False is insertion-order)
+* 2, The paramter "accessOrder" for constructor is important, when implementating LRU, it should be true. (True is access-order, False is insertion-order)
 **********************************************
 
 **********************************************
