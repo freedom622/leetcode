@@ -378,6 +378,67 @@ https://blog.csdn.net/column/details/24281.html
 
 ## Summary
 
+classic implementation
+
+// Union Find coding 
+// https://www.jianshu.com/p/15cd02da4648
+// http://bgmeow.xyz/2017/01/07/union-find/
+
+public class UnionFind {
+
+    private int[] id;
+    private int[] size;
+    private int count;
+
+    public UnionFind(int N) {
+        count = N;
+        id = new int[N];
+        for (int i = 0; i < N; i++) {
+            id[i] = i;
+        }
+        size = new int[N];
+        for (int i = 0; i < N; i++) {
+            size[i] = 1;
+        }
+
+    }
+
+    public int count() {
+        return count;
+    }
+
+    public int find(int p) {
+        int temp = p;
+        while (p != id[p])
+            p = id[p];
+        id[temp] = id[p];
+        return p;
+    }
+
+    public boolean connected(int q, int p) {
+        return find(q) == find(p);
+    }
+
+    public void union(int p, int q) {
+        int pRoot = find(p);
+        int qRoot = find(q);
+
+        if (pRoot == qRoot)
+            return;
+
+        if (size[pRoot] < size[qRoot]) {
+            id[pRoot] = id[qRoot];
+            size[qRoot] += size[pRoot];
+        } else {
+            id[qRoot] = id[pRoot];
+            size[pRoot] += size[qRoot];
+        }
+
+        count--;
+    }
+
+}
+
 **********************************************
 
 **12, Topological Sort problem**
