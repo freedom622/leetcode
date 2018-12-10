@@ -595,5 +595,16 @@ Time Complexity:
 
 ## Summary
 
+**14, Heap Problem**
+**********************************************
+
+```
+
+```
+
+## Summary
+|               |   insertion   |   deletion    |     Build     | 
+| ------------- | ------------- | ------------- | ------------- |
+| Heap          |      O(logn)  |     O(logn)   |      O(n)     |
 
 
